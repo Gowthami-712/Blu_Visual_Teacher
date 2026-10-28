@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:08,262
+Hello, welcome to our lesson on basic shapes. Today we'll explore some of the most common and important shapes in mathematics.
+
+2
+00:00:08,262 --> 00:00:14,486
+Here are some basic shapes: a circle, a square, a triangle, a rectangle, and a pentagon.
+
+3
+00:00:14,486 --> 00:00:18,931
+Each shape has its own unique properties and uses in mathematics.
+
+4
+00:00:18,931 --> 00:00:32,806
+Here are some key properties of each shape: the circle is round, the square has four equal sides and angles, the triangle has three sides, the rectangle has two sets of parallel lines, and the pentagon has five sides.
+

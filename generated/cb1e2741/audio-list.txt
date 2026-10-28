@@ -1,0 +1,8 @@
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/audio/scene-00.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/pause.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/audio/scene-01.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/pause.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/audio/scene-02.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/pause.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/audio/scene-03.wav'
+file 'C:/Users/Dell/Downloads/blu-visual-teacher-share-11/source/./generated/cb1e2741/pause.wav'
