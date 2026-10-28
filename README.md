@@ -1,2 +1,174 @@
-# Blu_Visual_Teacher
-An AI-powered educational application that transforms concepts into visual lessons with narration.
+# 🎓 Blu Visual Teacher
+### AI-Powered Visual Learning with Text-to-Speech
+
+Blu Visual Teacher is an educational application designed to make learning more interactive and accessible by combining visual explanations with AI-powered text-to-speech narration.
+
+The project aims to help learners understand educational concepts through structured lessons, visual learning materials, and spoken explanations.
+
+It combines a Java-based application backend with a Python-based text-to-speech component using the Kokoro ONNX model.
+
+---
+
+## 📌 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Problem Statement](#-problem-statement)
+- [Objectives](#-objectives)
+- [Key Features](#-key-features)
+- [System Architecture](#-system-architecture)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [How the Application Works](#-how-the-application-works)
+- [Prerequisites](#-prerequisites)
+- [Installation and Setup](#-installation-and-setup)
+- [Running the Application](#-running-the-application)
+- [Text-to-Speech Setup](#-text-to-speech-setup)
+- [Testing](#-testing)
+- [AI Model Requirements](#-ai-model-requirements)
+- [Troubleshooting](#-troubleshooting)
+- [Security Considerations](#-security-considerations)
+- [Current Implementation Status](#-current-implementation-status)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
+
+---
+
+## 🌟 Project Overview
+
+Traditional learning methods often rely heavily on textbooks and written explanations. Some learners benefit from additional visual representations and spoken explanations that make educational material easier to follow.
+
+Blu Visual Teacher aims to address this challenge by bringing visual learning and speech synthesis together in a single educational application.
+
+The project uses a Java-based backend built with Spring Boot and a Python-based text-to-speech component. The speech component uses Kokoro ONNX to convert text into audio.
+
+The long-term goal is to provide a learning environment where educational content can be presented in a more engaging, understandable, and accessible format.
+
+### Project Highlights
+
+- Java and Spring Boot application backend.
+- Python-based text-to-speech component.
+- Kokoro ONNX speech synthesis.
+- Local AI model support.
+- Maven-based Java project management.
+- Automated Java testing.
+- Modular structure for future educational features.
+
+---
+
+## 🎯 Problem Statement
+
+Educational content is frequently delivered through text-heavy materials that may not suit every learner's preferred learning style.
+
+Learners may benefit from:
+
+- Visual representations of difficult concepts.
+- Spoken explanations that complement written content.
+- More interactive learning experiences.
+- Accessible learning materials that support different needs.
+- Opportunities to learn at their own pace.
+
+Blu Visual Teacher explores how software engineering, artificial intelligence, and speech synthesis can help create a more accessible and engaging educational experience.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of Blu Visual Teacher are:
+
+1. **Improve learning accessibility:** Support learning experiences that combine written, visual, and spoken information.
+
+2. **Integrate AI-based speech synthesis:** Convert educational text into spoken audio using a local text-to-speech model.
+
+3. **Develop a modular application:** Separate the Java application backend from the Python speech-processing component.
+
+4. **Support local processing:** Provide a way to run speech synthesis locally when the required model and dependencies are installed.
+
+5. **Encourage interactive learning:** Establish a foundation for future visual lessons, narrated explanations, and educational content generation.
+
+6. **Enable future expansion:** Provide an architecture that can be extended with additional learning tools and content-generation capabilities.
+
+---
+
+## ✨ Key Features
+
+### 1. Java Application Backend
+
+The project includes a Java application built using Spring Boot.
+
+Spring Boot provides the foundation for implementing application services, processing requests, and extending the application's functionality.
+
+### 2. Python Text-to-Speech Component
+
+The project contains a Python script named `kokoro_synthesize.py`.
+
+This component is intended to handle speech synthesis using the Kokoro ONNX model.
+
+### 3. Kokoro ONNX Integration
+
+The project uses the Kokoro ONNX model for local text-to-speech processing.
+
+The model and associated voice data are stored separately from the application source code.
+
+### 4. Audio Generation
+
+The speech-synthesis setup has been tested to generate a WAV audio file locally.
+
+This demonstrates that the Python speech component can produce audio in the configured environment.
+
+### 5. Maven Build Support
+
+The Java project uses Maven for dependency management, compilation, packaging, and testing.
+
+### 6. Modular Project Structure
+
+The Java application and Python speech component are maintained in separate parts of the project.
+
+This structure provides a foundation for extending the application without placing all processing logic in a single component.
+
+### 7. Extensible Learning Platform
+
+The project is intended to support future enhancements such as narrated lessons, visual educational content, additional learning subjects, and improved user interaction.
+
+**Note:** Features such as end-to-end lesson generation, synchronized visual narration, multilingual lesson generation, and MP4 export should be considered planned capabilities until their complete implementation has been verified.
+
+---
+
+## 🏗️ System Architecture
+
+The project contains two primary technical components.
+
+### Java Application Layer
+
+**Technology:** Java, Spring Boot, Maven
+
+Responsibilities include the Java application runtime and the backend functionality implemented in the project.
+
+### Python Speech Layer
+
+**Technology:** Python, Kokoro ONNX
+
+Responsibilities include text-to-speech processing and audio generation using the configured model and voice data.
+
+### High-Level Architecture
+
+```text
+                  Blu Visual Teacher
+                          |
+             +------------+------------+
+             |                         |
+             v                         v
+     Java Application             Python TTS
+       Spring Boot                    |
+             |                         v
+             |                  Kokoro ONNX
+             |                         |
+             |                         v
+             |                    Voice Data
+             |                         |
+             |                         v
+             |                    WAV Audio
+             |
+             v
+       Application Services
